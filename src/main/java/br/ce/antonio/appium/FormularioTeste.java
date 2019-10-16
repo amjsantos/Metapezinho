@@ -122,8 +122,8 @@ public class FormularioTeste {
 		AndroidDriver<MobileElement> driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
 		
 		//Realiza a pesquisa na home
-		PageHome pageHome = new PageHome();
-        pageHome.pageHome(driver);
+		PageHome pesquisa = new PageHome();
+        pesquisa.pesquisa(driver);
 		
 		//Realiza acesso ao video		
 		AcessarVideo acessarVideo = new AcessarVideo();
