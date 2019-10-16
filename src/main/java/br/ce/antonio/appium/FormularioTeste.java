@@ -111,7 +111,7 @@ public class FormularioTeste {
 	}
 
 	@Test
-	public void deveAbrirYoutubSwitchCheckBox1() throws MalformedURLException {
+	public void deveAbrirYoutube() throws MalformedURLException {
 		DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 		desiredCapabilities.setCapability("platformName", "Android");
 		desiredCapabilities.setCapability("deviceName", "emulator-5554");
@@ -123,7 +123,7 @@ public class FormularioTeste {
 		
 		//Realiza a pesquisa na home
 		PageHome pesquisa = new PageHome();
-        pesquisa.pesquisa(driver);
+        pesquisa.pageHome(driver);
 		
 		//Realiza acesso ao video		
 		AcessarVideo acessarVideo = new AcessarVideo();
